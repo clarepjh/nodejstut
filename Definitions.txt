@@ -33,12 +33,15 @@ REST -- an architectural style for buildings api
 NOSQL -- a variety of technologies that are alternatives to tables and sql  (document database)
 Stack -- the combination of all technologies used to build a piece of software
 DOM -- the structure browsers use to store and manage web pages
+CDN -- content delivery network
 
 Inside node -- V8 (One code at a time)
 also inside node, there is libuv -- things happening lower level - events occuring in the operating system
 libuv is constantly checking the event loop -- requesting from OS -> OS has event -> into queue --> callback
 AKA - Event Driven Non-Blocking I/O in V8 Javascript
 
+// tip: put angular code in Headers
+// other node.js code can be insert in the body
 
 
 // TCP & IP -- Protocol 
