@@ -83,3 +83,9 @@ MongaDB -- stores your data in documents that look a lot like JSON and JavaSCrip
 Express - Javascript framework that makes things like routing, writing APIs, and working with HTTP easier
 ANgularJS -- Javascript framework for managing code and UI in the browser, removing a lot of manual work
 Node.js --  Javascript on the server. Handle HTTPL requests and responses and lots more
+
+
+
+app.js running node.js server running using EJS & Espress (server side)
+views file - index file
+public - js - app.js (client side app) node.js & angular code
