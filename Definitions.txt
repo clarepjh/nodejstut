@@ -1,0 +1,81 @@
+// Definitions 
+
+Asynchronous -- more than one process running simultaneously (NodeJS)
+Synchronous -- one porcess executing at a time (Javescript)
+Callback -- a function passed to some other function which we assume will be invoked at some point
+Non-blocking -- doing other things without stopping your programming from running 
+Buffer -- a temporary holding spot for data being moved from one place to another -- holds raw data (0s and 1s)
+Stream -- a sequence of data made available over time
+Binary data -- data stored in binary (sets of 1s and 0s)
+Character set -- a representation of characters as numbers - e.g. unicode
+Character encoding -- how characters are stored in binary
+Byte -- 8 bits 
+Error-first callback: callbacks take an error object as their first parameter 
+Chunk: a piece of data being sent through a stream 
+Abstract (Base) class: A type of constructor you never work directly with, but inherit from 
+Pipe -- Connecting two streams by writing to one stream what is being read from another 
+Method chaining -- a method returns an object so we can keep calling more methods
+Protocol -- a set of rules two sides agree on to use when communcating 
+MINE (Imultipurpose internet Mail Extensions) Type -- A standard for specifiying the type of data being sent
+API (Application Programming Interface) -- A set of tools for building a software application
+Endpoint -- one url in a web API 
+Serializie -- transporting an object into a format that be can stored or transferred 
+Routing -- Mapping HTTP requests to content
+Package -- collection of code
+Package Management System -- Software that automates installing and updating packages 
+Dependency -- code that another set of code depends on to function
+Versioning -- specifying what version of a set of this is (Major.Minor.patch --> e.g. 1.7.2)
+Environment Variables -- global variables specific to the environment (server) our code is living in 
+HTTP Method -- specifies the type of action the request wishes to make
+Middleware - code that sits between two layers of software
+static -- not dynamic (e.g. HTML, CSS, Image & file)
+REST -- an architectural style for buildings api
+NOSQL -- a variety of technologies that are alternatives to tables and sql  (document database)
+Stack -- the combination of all technologies used to build a piece of software
+DOM -- the structure browsers use to store and manage web pages
+
+Inside node -- V8 (One code at a time)
+also inside node, there is libuv -- things happening lower level - events occuring in the operating system
+libuv is constantly checking the event loop -- requesting from OS -> OS has event -> into queue --> callback
+AKA - Event Driven Non-Blocking I/O in V8 Javascript
+
+
+
+// TCP & IP -- Protocol 
+// Protocol -- a set of rules two sides agree on to use when communcating 
+
+// Client Service Model of computing 
+
+// IP  = internet protocol (identifying using IP)
+// webserver -> HTTP, FTP, SMTP (socket) -> Browser
+// Transmission Control Protocol -- splitting the information from one computer to one computer (a packet)
+
+// Port -- once a computer receives a packet, how it knows what program to send it to -- which program is 'listening' to that port 
+// 78.132.160.4:443 e.g. of socket address
+
+// ---------------------------------------------------------------------------------------// 
+// HTTP -- a set of rules (and a format) for data being transferred on the web
+// HyperText Transfer Protocol (it is a format defining data being transferred via tcp/ip)
+
+// Headers Example 
+// CONNECT www.google.com:443 HTTP/1.1
+// Host: wwww.google.com
+// Connection: keep-alive
+
+// Response
+// HTTP/1.1 200 OK -- Status
+// Content-Length: 44 -- Headers
+// Content-Type: text/html  -- Headers (MINE Imultipurpose internet Mail Extensions) Type: A standard for specifiying the type of data being sent)
+// <html><head> .. </html></head> 
+
+// HTTP_PARSER
+// Programme embedded inside of NodeJS
+// Parses requests and resposes; takes information in some format (e.g. binary)  and breaks it up. We can have different data from this method
+
+nodemon == if there are any updates in the code, nodemon will help restart the server 
+
+MEAN = MONGA DB, EXPRESS, ANGULAR, NODE.JS
+MongaDB -- stores your data in documents that look a lot like JSON and JavaSCript object literal notation
+Express - Javascript framework that makes things like routing, writing APIs, and working with HTTP easier
+ANgularJS -- Javascript framework for managing code and UI in the browser, removing a lot of manual work
+Node.js --  Javascript on the server. Handle HTTPL requests and responses and lots more

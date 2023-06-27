@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <link href=/assets/style.css" type=""text/css" ref="stylesheet"/>
+    </head>
+    <body>
+        <!---<h1>Personsleep: <%= ID %></h1> -->
+        <form method="POST" action="/person">
+            First name: <input type="text" id="firstname"
+            name="firstname" /><br />
+            Last name: <input type="text" id="lastname"
+            name="lastname" /><br />
+            <input tpye="submit" value="submit" />
+            
+        </form>
+        <script>
+            $.ajax({
+                type: "POST",
+                url: "/personjson",
+                data: JSON.stringify({ firstname: 'Jane', lastname: 'Doe'}),
+                dataType: JSON,
+                contentType: 'application/json'
+            });
+        </script>
+    </body>
+</html>
