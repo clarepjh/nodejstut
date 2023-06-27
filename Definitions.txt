@@ -34,6 +34,7 @@ NOSQL -- a variety of technologies that are alternatives to tables and sql  (doc
 Stack -- the combination of all technologies used to build a piece of software
 DOM -- the structure browsers use to store and manage web pages
 CDN -- content delivery network
+full stack developer -- a developer who knows all the pieces of a software stack
 
 Inside node -- V8 (One code at a time)
 also inside node, there is libuv -- things happening lower level - events occuring in the operating system
